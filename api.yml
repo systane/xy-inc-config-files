@@ -1,13 +1,12 @@
 server:
   port: 9091
 
-amazon:
-  dynamodb:
-    endpoint: http://localhost:8000/
-  aws:
-    accesskey: xyIncAccessKey
-    secretkey: xyIncSecretKey
-
+spring:
+  data:
+    mongodb:
+      database: xy-inc
+      uri: mongodb://admin:admin123@ds261626.mlab.com:61626/xy-inc
+      
 eureka:
   instance:
     hostname: localhost
