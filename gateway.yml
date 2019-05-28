@@ -12,9 +12,10 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   service:
     wait-time-in-ms-when-sync-empty: 3000
-    
+
 zuul:
   routes:
     api:
-      path: /**
-      url: http://localhost:8080/api/
+      path: /poi/**
+      serviceId: api
+  prefix:  /api
