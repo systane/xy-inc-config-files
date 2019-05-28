@@ -16,7 +16,5 @@ eureka:
 zuul:
   routes:
     api:
-      path: /poi/**
+      path: /api/**
       url: http://apiContainer:9091/
-      serviceId: api
-  prefix:  /api
