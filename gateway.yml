@@ -17,5 +17,6 @@ zuul:
   routes:
     api:
       path: /poi/**
+      url: http://apiContainer:9091
       serviceId: api
   prefix:  /api
