@@ -1,0 +1,14 @@
+server:
+  port: 8765
+
+eureka:
+  instance:
+    hostname: discoveryServerContainer
+    port: 9090
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  service:
+    wait-time-in-ms-when-sync-empty: 3000
