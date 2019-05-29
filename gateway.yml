@@ -19,7 +19,7 @@ zuul:
       path: /api/**
       url: http://apiContainer:9091/
     eureka:
-      path: /eureka/
+      path: /eureka/**
       url: http://discoveryServerContainer:9090/
     configServer:
       path: /configServer/**
