@@ -1,0 +1,11 @@
+server:
+  port: 9091
+
+spring:
+  data:
+    mongodb:
+      database: xy-inc
+      uri: mongodb://admin:admin123@ds259596.mlab.com:59596/xy-inc-test
+      
+eureka:
+  enable: false
