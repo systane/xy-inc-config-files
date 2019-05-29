@@ -22,5 +22,5 @@ zuul:
       path: /eureka/
       url: http://discoveryServerContainer:9090/
     configServer:
-      path:/configServer/**
-      url:http://configServerContainer:8888/
+      path: /configServer/**
+      url: http://configServerContainer:8888/
